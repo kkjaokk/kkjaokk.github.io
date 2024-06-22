@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background: #0D0022;
+    color: #fff;
+}
+
+html {
+    font-family: "Ubuntu", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+nav {
+    
+    max-width: 100%;
+    margin: auto;
+    padding: 1.5rem 18.625rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #240046 0%, #3C0A6D 100%);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    color: #fff;
+}
+
+.btnNav {
+
+    background: linear-gradient(to right, #7B2BBE 0%, #C67DFF 100%);
+    display: flex;
+    border-radius: 55px;
+    padding: 10px 20px;
+    align-items: center;
+    gap: 10px;
+    border: none; 
+
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    transition: background 300ms ease-in;
+    
+}
+
+.btnNav:hover {
+    background: #130022;
+}
+
+
+.menu > li {
+    color: #fff;
+    transition: all 300ms ease-in;
+}
+
+.menu > li:hover {
+    color:#C67DFF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.principal{
+
+    background-image:url('public/images/img-banner.png');
+    background-repeat: no-repeat;
+
+}
+
+.hero {
+    
+    width: 100%;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8rem;
+
+    padding: 0rem 10rem;
+    margin: auto;
+
+    overflow: clip;
+}
+
+.bannerButton{
+
+    width: 10rem;
+    
+    padding: 10px 20px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 55px;
+    background: linear-gradient(90deg, #7B2BBE 0%, #C67DFF 100%);
+    border: none;
+
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    transition: background 300ms ease-in;
+}
+
+
+.hero-conteudo{
+    
+    width: 35%;
+    flex-direction: column;
+    display: flex;
+    gap: 1rem;
+}
+
+.destaque{
+
+    color: #C67DFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+
+}
+
+
+
+.bannerButton:hover {
+    background: #130022;
+}
+
+h1 {
+
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 4.5rem;
+    font-weight: 800;
+
+}
+
+hr {
+
+    width: 100%;
+    border-color: #C67DFF;
+
+}
+
+.subtitulo {
+
+    color: #fff;
+    font-family: Ubuntu;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 156%; 
+
+}
+
+.imgs_container {
+    max-width: 50%;
+    column-count: 4;
+    column-gap: 1rem;
+    margin: -1rem;
+}
+
+.imgs_container > figure > img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.botao-container {
+
+    width: 100%;
+    
+   
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+
+}
+
+.botao-container > button{
+
+    position:absolute;
+
+}
+
+.button-ct {
+
+    
+    border: none;
+    padding: 1rem;
+    border-radius: 4rem;
+    
+    background: #C67DFF;
+
+}
+
+.jogoslista {
+
+    display: flex; 
+    
+    margin: auto;
+    flex-direction: column;
+    max-width: 1440px;
+
+    padding: 3rem 2rem;
+    margin-top: 100px;
+
+
+}
+
+.jogosheader{
+    padding: 0rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+
+.lista-titulo{
+
+    color: #FFF2E7;
+    font-family: Ubuntu;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+
+}
+
+.subtitulo2 {
+
+    color: #C7BAB3;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+
+
+}
+
+.linha {
+
+    max-width: 48%;
+
+}
+
+.jogo-card-container{
+    
+    flex-basis: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 3rem;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+}
+
+.jogo-card {
+
+
+    width: 37rem;
+    background: #3C0A6D;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    
+}
+
+.txt-card{
+
+  justify-content: space-between;
+  margin: auto;
+
+
+
+}
+
+
+.topo{
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+
+}
+
+.classificacao{
+
+    color:#ff91f6;
+
+}
+
+.descricao{
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.botaoComprar{
+
+    width: 9rem;
+    background: linear-gradient(90deg, #01B133 0%, #057D27 100%);
+    
+    border-radius: 55px;
+    padding: 10px 20px;
+    align-items: center;
+    gap: 10px;
+    border: none; 
+
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+
+    transition: background 400ms ease-in
+
+}
+
+.botaoComprar:hover{
+
+    background: #033f14;
+
+}
+
+.botaoComprar2{
+
+    width: 20rem;
+    background: linear-gradient(90deg, #01B133 0%, #057D27 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 55px;
+    padding: 10px 20px;
+    align-items: center;
+    gap: 10px;
+    border: none; 
+
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+
+    transition: background 400ms ease-in
+
+}
+
+.botaoComprar2:hover{
+
+    background: #033f14;
+
+}
+
+.botaodiv{
+
+    flex-direction: row;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img-jogo > img{
+
+    border-radius: 0.5rem;
+    width: 14rem;
+    
+
+}
+
+.rectangle {
+
+    width: 100%;
+    height: 6px;
+    background:#C67DFF;
+}
+
+
+.linkgit{
+
+    color: #ff91f6;
+    transition: 300ms;
+}
+
+.linkgit:hover{
+
+    color: #f34ee5;
+    
+}
+
+footer{
+
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background: linear-gradient(90deg, #3C0A6D 0%, #7413D3 100%);;
+
+}
+
+.footer-autor{
+
+    
+
+}
+
+.footer-autor > a > img {
+
+    width: 1rem;
+
+    
+
+}
+
+.footer-copy{
+
+    color: #FFF2E7;
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 120%; /* 24px */
+    letter-spacing: -0.4px;
+
+}
+
+.footer-itens{
+
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    color: #fff;
+
+}
+
+
